@@ -1,0 +1,2 @@
+# janus
+eslint configuration 
