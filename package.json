@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-janus",
+  "version": "1.0.25",
+  "description": "an eslint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ./lib/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzzgit/janus.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "jonkee",
+  "license": "LGPL-3.0-or-later",
+  "homepage": "https://github.com/zzzgit/janus#readme",
+  "bugs": {
+    "url": "https://github.com/zzzgit/janus/issues"
+  },
+  "engines": {
+    "npm": ">=6.9.0",
+    "node": ">=10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-plugin-jest": "^22.5.1",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1"
+  }
+}
