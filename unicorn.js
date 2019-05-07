@@ -5,7 +5,7 @@ module.exports = {
 		"unicorn/custom-error-definition": "off",
 		"unicorn/error-message": "error",
 		"unicorn/escape-case": "error",
-		"unicorn/explicit-length-check": "error",
+		"unicorn/explicit-length-check": "off",
 		"unicorn/filename-case": "off",
 		"unicorn/import-index": "error",
 		"unicorn/new-for-builtins": "error",
