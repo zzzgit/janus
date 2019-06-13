@@ -21,6 +21,7 @@ module.exports = {
 		"arrow-parens": "off",
 		"no-trailing-spaces": "off",
 		"require-jsdoc": "off",
+		"no-extra-parens": ["all", { ignoreJSX: "all"}],
 		"no-tabs": "off"
 	}
 }

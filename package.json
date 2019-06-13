@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-janus",
-  "version": "1.0.28",
+  "version": "1.0.30",
   "description": "an eslint configuration",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ./lib/**"
+    "test": "eslint \"./lib/**\""
   },
   "repository": {
     "type": "git",
