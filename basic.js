@@ -18,7 +18,7 @@ module.exports = {
 		"camelcase": "off",
 		"no-var": "error",
 		"max-len": "off",
-		"arrow-parens": "off",
+		"arrow-parens": ["error", { "as-needed": { "requireForBlockBody": true}}],
 		"no-trailing-spaces": "off",
 		"require-jsdoc": "off",
 		"no-extra-parens": ["error", "all", { ignoreJSX: "all"}],
