@@ -21,6 +21,7 @@ module.exports = {
 		"arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
 		"no-trailing-spaces": "off",
 		"require-jsdoc": "off",
+		"space-in-parens": ["error", "never"],
 		"no-extra-parens": ["error", "all", { ignoreJSX: "all"}],
 		"no-tabs": "off"
 	}
