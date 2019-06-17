@@ -19,9 +19,10 @@ module.exports = {
 		"no-var": "error",
 		"max-len": "off",
 		"arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
-		"no-trailing-spaces": "off",
+		"no-trailing-spaces": ["error", {"skipBlankLines": false, "ignoreComments": true}],
 		"require-jsdoc": "off",
 		"space-in-parens": ["error", "never"],
+		"newline-per-chained-call": ["error", { ignoreChainWithDepth: 2}],
 		"no-extra-parens": ["error", "all", { ignoreJSX: "all"}],
 		"no-tabs": "off"
 	}
