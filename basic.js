@@ -13,7 +13,7 @@ module.exports = {
 		"quotes": "off",
 		"semi": ["error", "never"],
 		"no-useless-escape": "warn",
-		"space-before-function-paren": ["error", { "anonymous": "never", "named": "never", "asyncArrow": "never" }],
+		"space-before-function-paren": ["error", { "anonymous": "never", "named": "never", "asyncArrow": "always" }],
 		"no-console": "off",
 		"camelcase": "off",
 		"no-var": "error",
