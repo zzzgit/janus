@@ -22,8 +22,12 @@ module.exports = {
 		"no-trailing-spaces": ["error", {"skipBlankLines": false, "ignoreComments": true}],
 		"require-jsdoc": "off",
 		"space-in-parens": ["error", "never"],
-		"newline-per-chained-call": ["error", { ignoreChainWithDepth: 2}],
-		"no-extra-parens": ["error", "all", { ignoreJSX: "all"}],
+		"space-unary-ops": ["error", { "words": true, "nonwords": false }],
+		"keyword-spacing": ["error", { "before": true, "after": false }],
+		"space-infix-ops": ["error", { "int32Hint": false }],
+		"no-multi-spaces": ["error", { "ignoreEOLComments": false, "exceptions": { "Property": false }}],
+		"newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2}],
+		"no-extra-parens": ["error", "all", { "ignoreJSX": "all"}],
 		"no-tabs": "off"
 	}
 }
