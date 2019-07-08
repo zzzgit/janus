@@ -23,7 +23,7 @@ module.exports = {
 		"require-jsdoc": "off",
 		"space-in-parens": ["error", "never"],
 		"space-unary-ops": ["error", { "words": true, "nonwords": false }],
-		"keyword-spacing": ["error", { "before": true, "after": false }],
+		"keyword-spacing": ["error", { "before": true, "after": true }],
 		"space-infix-ops": ["error", { "int32Hint": false }],
 		"no-multi-spaces": ["error", { "ignoreEOLComments": false, "exceptions": { "Property": false }}],
 		"newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2}],
