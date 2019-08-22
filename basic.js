@@ -28,6 +28,7 @@ module.exports = {
 		"no-multi-spaces": ["error", { "ignoreEOLComments": false, "exceptions": { "Property": false }}],
 		"newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2}],
 		"no-extra-parens": ["error", "all", { "ignoreJSX": "all"}],
-		"no-tabs": "off"
+		"no-tabs": "off",
+		"eol-last": ["error", "always"],
 	}
 }
