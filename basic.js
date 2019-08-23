@@ -30,5 +30,6 @@ module.exports = {
 		"no-extra-parens": ["error", "all", { "ignoreJSX": "all"}],
 		"no-tabs": "off",
 		"eol-last": ["error", "always"],
+		"no-multiple-empty-lines": ["error", { "max":2, "maxEOF":1}],
 	}
 }
