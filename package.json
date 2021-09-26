@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-janus",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "an eslint configuration",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,16 @@
     "npm": ">=7.2.0",
     "node": ">=10.0"
   },
-  "dependencies": {},
+  "dependencies": {
+	},
   "devDependencies": {
-    "eslint-plugin-jest": "^24.4.2",
+		"@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jest": "^24.4.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-config-google": "^0.14.0"
+    "typescript": "^4.4.3"
   }
 }
