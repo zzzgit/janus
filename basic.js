@@ -19,7 +19,7 @@ module.exports = {
 		"no-var": "error",
 		"max-len": "off",
 		"arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
-		"no-trailing-spaces": ["error", {"skipBlankLines": false, "ignoreComments": true}],
+		"no-trailing-spaces": ["error", {"skipBlankLines": false, "ignoreComments": false}],
 		"require-jsdoc": "off",
 		"space-in-parens": ["error", "never"],
 		"space-unary-ops": ["error", {"words": true, "nonwords": false}],
