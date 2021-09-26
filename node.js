@@ -1,11 +1,11 @@
 module.exports = {
 	"env": {
 		"node": true,
-		"commonjs": true
+		"commonjs": true,
 	},
 	"globals": {
 		"Atomics": false,
-		"SharedArrayBuffer": false
+		"SharedArrayBuffer": false,
 	},
 	"plugins": ["eslint-plugin-node"],
 	"rules": {
@@ -30,5 +30,5 @@ module.exports = {
 		"node/prefer-global/text-encoder": "error",
 		"node/prefer-global/url-search-params": "error",
 		"node/prefer-global/url": "error",
-	}
+	},
 }

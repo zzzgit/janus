@@ -13,6 +13,6 @@ module.exports = {
 		'security/detect-object-injection': 'off',
 		'security/detect-possible-timing-attacks': 'warn',
 		'security/detect-pseudoRandomBytes': 'warn',
-		'security/detect-unsafe-regex': 'warn'
-	}
+		'security/detect-unsafe-regex': 'warn',
+	},
 }

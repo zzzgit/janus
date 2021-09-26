@@ -14,5 +14,5 @@ module.exports = {
 		"lit/no-template-map": "warn",
 		"lit/no-useless-template-literals": "error",
 		"lit/no-value-attribute": "error",
-	}
+	},
 }

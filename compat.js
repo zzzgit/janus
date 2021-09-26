@@ -1,9 +1,9 @@
 module.exports = {
 	"env": {
-		"browser": true
+		"browser": true,
 	},
 	"plugins": ["compat"],
 	"rules": {
-		'compat/compat': 'error'
-	}
+		'compat/compat': 'error',
+	},
 }

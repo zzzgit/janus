@@ -1,6 +1,6 @@
 module.exports = {
 	"env": {
-		jest: true
+		jest: true,
 	},
 	"plugins": ["jest"],
 	"rules": {
@@ -8,13 +8,13 @@ module.exports = {
 		"jest/expect-expect": [
 			"error",
 			{
-				"assertFunctionNames": ["expect"]
-			}
+				"assertFunctionNames": ["expect"],
+			},
 		],
 		"jest/lowercase-name": "error",
 		"jest/no-alias-methods": "error",
 		"jest/no-disabled-tests": "off",
-		"jest/no-empty-title": "error",
+		"jest/valid-title": "error",
 		"jest/no-focused-tests": "off",
 		"jest/no-hooks": "off",
 		"jest/no-identical-title": "error",
@@ -22,7 +22,7 @@ module.exports = {
 		"jest/no-jest-import": "error",
 		"jest/no-mocks-import": "error",
 		"jest/no-large-snapshots": "off",
-		"jest/no-test-callback": "error",
+		"jest/no-done-callback": "error",
 		"jest/no-test-prefixes": "error",
 		"jest/no-test-return-statement": "off",
 		"jest/no-truthy-falsy": "error",
@@ -39,6 +39,6 @@ module.exports = {
 		"jest/valid-expect-in-promise": "error",
 		"jest/valid-expect": "error",
 		"jest/prefer-todo": "error",
-		"jest/prefer-called-with": "error"
-	}
+		"jest/prefer-called-with": "error",
+	},
 }

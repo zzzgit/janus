@@ -34,6 +34,6 @@ module.exports = {
 		"unicorn/prefer-type-error": "off",
 		"unicorn/prevent-abbreviations": "off",
 		"unicorn/regex-shorthand": "error",
-		"unicorn/throw-new-error": "error"
-	}
+		"unicorn/throw-new-error": "error",
+	},
 }
