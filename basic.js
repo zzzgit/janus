@@ -16,6 +16,7 @@ module.exports = {
 		"space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
 		"no-console": "off",
 		"camelcase": "off",
+		"brace-style": ["error", "1tbs", {"allowSingleLine": true}],
 		"no-var": "error",
 		"max-len": "off",
 		"arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
