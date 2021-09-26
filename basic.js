@@ -10,6 +10,8 @@ module.exports = {
 	"rules": {
 		"indent": ["error", "tab"],
 		"linebreak-style": "off",
+		"object-curly-spacing": ["error", "never"],
+		"array-bracket-spacing": ["error", "never"],
 		"quotes": "off",
 		"semi": ["error", "never"],
 		"no-useless-escape": "warn",
