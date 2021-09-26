@@ -13,24 +13,9 @@ module.exports = {
 		"@typescript-eslint/ban-types": "error",
 		"@typescript-eslint/camelcase": "off",
 		"@typescript-eslint/naming-convention": ["error", [
-			{
-				selector: 'default',
-				format: ['camelCase'],
-				leadingUnderscore: 'allow',
-				trailingUnderscore: 'forbid',
-			},
-
-			{
-				selector: 'variable',
-				format: ['camelCase', 'UPPER_CASE'],
-				leadingUnderscore: 'allow',
-				trailingUnderscore: 'allow',
-			},
-
-			{
-				selector: 'typeLike',
-				format: ['PascalCase'],
-			},
+			{"selector": "default", "format": ["camelCase"], "leadingUnderscore": "allow", "trailingUnderscore": "forbid"},
+			{"selector": "variable", "format": ["camelCase", "UPPER_CASE"],
+				"leadingUnderscore": "allow", "trailingUnderscore": "allow"}, {"selector": "typeLike", "format": ["PascalCase"]},
 		]],
 		"@typescript-eslint/explicit-function-return-type": ["error", {"allowExpressions": true}],
 		"@typescript-eslint/explicit-member-accessibility": "off",
