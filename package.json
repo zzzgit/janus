@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-janus",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "an eslint configuration",
   "main": "index.js",
   "scripts": {

@@ -18,7 +18,6 @@ module.exports = {
 		"@typescript-eslint/indent": "off",
 		"@typescript-eslint/interface-name-prefix": "off",
 		"@typescript-eslint/member-delimiter-style": ["error", {"multiline": {"delimiter": "none", "requireLast": true}, "singleline": {"delimiter": "semi", "requireLast": false}}],
-		"@typescript-eslint/member-naming": "error",
 		"@typescript-eslint/member-ordering": "off",
 		"@typescript-eslint/no-array-constructor": "error",
 		"@typescript-eslint/no-empty-interface": "error",
