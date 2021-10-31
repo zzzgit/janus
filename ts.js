@@ -56,9 +56,9 @@ module.exports = {
 		'@typescript-eslint/unbound-method': ["error", {'ignoreStatic': true}],
 		'@typescript-eslint/unified-signatures': "warn",
 		"space-before-function-paren": "off",
-		"@typescript-eslint/space-before-function-paren": ["error"],
-		"space-infix-ops": "off",
-		"@typescript-eslint/space-infix-ops": ["error", {"int32Hint": true}],
+		"@typescript-eslint/space-before-function-paren": ["error", {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
+		// "space-infix-ops": "off",
+		// "@typescript-eslint/space-infix-ops": ["error", {"int32Hint": true}],
 
 	},
 }
