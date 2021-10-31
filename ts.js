@@ -55,5 +55,6 @@ module.exports = {
 		"@typescript-eslint/type-annotation-spacing": "off",
 		'@typescript-eslint/unbound-method': ["error", {'ignoreStatic': true}],
 		'@typescript-eslint/unified-signatures': "warn",
+		'@typescript-eslint/whitespace': ["warn", "check-branch", "check-decl", "check-operator", "check-module", "check-separator", "check-rest-spread", "check-type", "check-type-operator", "check-typecast", "check-preblock", "check-postbrace"],
 	},
 }
