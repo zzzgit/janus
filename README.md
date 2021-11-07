@@ -1,4 +1,7 @@
 # janus
 eslint configuration 
 
-ts extends basic
+ 
+
+
+<!-- 'ts' > 'basic' > ['eslint:recommended', 'google'] -->
