@@ -40,5 +40,18 @@ module.exports = {
 		"no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 1}],
 		"no-unused-vars": ["error", {"vars": "all", "args": "after-used", "ignoreRestSiblings": false}],
 		"comma-style": ["error", "last"],
+		"prefer-destructuring": ["error", {
+			"VariableDeclarator": {
+				"array": true,
+				"object": true,
+			},
+			"AssignmentExpression": {
+				"array": true,
+				"object": true,
+			},
+		},
+		{
+			"enforceForRenamedProperties": false,
+		}],
 	},
 }
