@@ -1,12 +1,12 @@
 module.exports = {
 	"parserOptions": {
-		"ecmaVersion": 2021,
-		// "sourceType": module
+		"ecmaVersion": "latest",
+		// "sourceType": module,
 	},
 	"env": {
 		"es6": true,
 	},
-	"extends": ['eslint:recommended', 'google'],
+	"extends": ['eslint:recommended', 'google', "./unicorn", "./array", "./promise"],
 	"rules": {
 		"indent": ["error", "tab"],
 		"linebreak-style": "off",

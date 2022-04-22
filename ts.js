@@ -3,7 +3,7 @@ module.exports = {
 	},
 	"globals": {
 	},
-	"extends": ["./basic.js"],
+	"extends": ["./basic.js"], // extend的目的，是為了在這裡可以關閉一些js的規則
 	"parser": "@typescript-eslint/parser",
 	"plugins": ["@typescript-eslint"],
 	"rules": {

@@ -1,7 +1,15 @@
 # janus
-eslint configuration 
 
- 
+eslint configuration.
 
+## dependency
 
-<!-- 'ts' > 'basic' > ['eslint:recommended', 'google'] -->
+`eslint:recommended  ->  google  ->  unicorn ->  array   ->  promise -> basic`
+
+`basic   -> ts`
+
+## desing
+
+The priority of inheritation:
+
+language > syntax > platform > env
