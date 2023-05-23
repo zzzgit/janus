@@ -18,3 +18,4 @@ package-lock.json
 test
 src
 .rpt2_cache
+.eslintrc.yml
