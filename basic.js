@@ -24,7 +24,6 @@ module.exports = {
 		"max-len": "off",
 		"arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
 		"no-trailing-spaces": ["error", {"skipBlankLines": false, "ignoreComments": false}],
-		"require-jsdoc": "off",
 		"func-call-spacing": ["error", "never"],
 		"space-in-parens": ["error", "never"],
 		"space-unary-ops": ["error", {"words": true, "nonwords": false}],
