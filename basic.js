@@ -6,7 +6,7 @@ module.exports = {
 	"env": {
 		"es6": true,
 	},
-	"extends": ['eslint:recommended', 'google', "./unicorn", "./array", "./promise"],
+	"extends": ['eslint:recommended', "./unicorn", "./array", "./promise"],
 	"rules": {
 		"indent": ["error", "tab"],
 		"linebreak-style": "off",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-janus",
-  "version": "1.1.29",
+  "version": "1.1.33",
   "description": "an eslint configuration",
   "scripts": {
     "test": "eslint \"./lib/**\""
@@ -27,7 +27,6 @@
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
     "eslint": "^8.41.0",
-    "eslint-config-google": "^0.14.0",
     "eslint-plugin-array-func": "^3.1.8",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-lit": "^1.8.3",

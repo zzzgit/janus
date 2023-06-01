@@ -3,7 +3,7 @@ module.exports = {
 	},
 	"globals": {
 	},
-	"extends": ["./basic.js"], // extend的目的，是為了在這裡可以關閉一些js的規則
+	"extends": ["./basic.js", "plugin:@typescript-eslint/recommended"], // extend的目的，是為了在這裡可以關閉一些js的規則
 	"parser": "@typescript-eslint/parser",
 	"plugins": ["@typescript-eslint"],
 	"rules": {
@@ -33,7 +33,6 @@ module.exports = {
 		}],
 		"@typescript-eslint/no-namespace": "error",
 		"@typescript-eslint/no-non-null-assertion": "error",
-		"@typescript-eslint/no-parameter-properties": "error",
 		"@typescript-eslint/no-require-imports": "off",
 		'@typescript-eslint/no-this-alias': ["error", {allowDestructuring: true}],
 		"@typescript-eslint/no-type-alias": ["error", {"allowAliases": "in-unions-and-intersections", "allowCallbacks": "always"}],
