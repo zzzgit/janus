@@ -4,7 +4,7 @@ eslint configuration.
 
 ## dependency
 
-`eslint:recommended  ->  google  ->  unicorn ->  array   ->  promise -> basic`
+`eslint:recommended  ->  unicorn ->  array   ->  promise -> basic`
 
 `basic   -> ts`
 
