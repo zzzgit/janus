@@ -3,9 +3,9 @@ module.exports = {
 	},
 	"globals": {
 	},
-	"extends": ["./basic.js", "plugin:@typescript-eslint/recommended"], // extend的目的，是為了在這裡可以關閉一些js的規則
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"], // extend的目的，是為了在這裡可以關閉一些js的規則
 	"parser": "@typescript-eslint/parser",
-	"plugins": ["@typescript-eslint"],
+	"plugins": ["@typescript-eslint", "@stylistic/ts"],
 	"rules": {
 		"@typescript-eslint/adjacent-overload-signatures": "error",
 		"@typescript-eslint/array-type": "error",

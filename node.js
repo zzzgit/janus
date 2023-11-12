@@ -2,6 +2,7 @@ module.exports = {
 	"env": {
 		"node": true,
 		"commonjs": true,
+		"browser": false,
 	},
 	"globals": {
 		"Atomics": false,

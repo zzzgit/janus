@@ -6,7 +6,8 @@ module.exports = {
 	"env": {
 		"es6": true,
 	},
-	"extends": ['eslint:recommended', "./unicorn", "./array", "./promise"],
+	"extends": ['eslint:recommended', "./unicorn", "./array", "./promise", "./stylistic"],
+	// "plugins": ['@stylistic/js'],
 	"rules": {
 		"indent": ["error", "tab"],
 		"linebreak-style": "off",
