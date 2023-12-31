@@ -1,11 +1,11 @@
 module.exports = {
-	"env": {
-		"browser": true,
-		"node": false,
+	env: {
+		browser: true,
+		node: false,
 	},
-	"globals": {
+	globals: {
 		// "Atomics": false,
 		// "SharedArrayBuffer": false,
 	},
-	extends: ["./js"],
+	extends: ['./js'],
 }

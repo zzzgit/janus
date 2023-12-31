@@ -1,6 +1,6 @@
 module.exports = {
-	"plugins": ["security"],
-	"rules": {
+	plugins: ['security'],
+	rules: {
 		'security/detect-buffer-noassert': 'warn',
 		'security/detect-child-process': 'warn',
 		'security/detect-disable-mustache-escape': 'warn',

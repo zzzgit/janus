@@ -1,10 +1,10 @@
 module.exports = {
-	"parserOptions": {
-		"sourceType": "module"
+	parserOptions: {
+		sourceType: 'module'
 	},
-	"extends": [
-		"../../js.js", "../../node.js"
+	extends: [
+		'../../js.js', '../../node.js'
 	],
-	"rules": {
+	rules: {
 	},
 }

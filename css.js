@@ -1,6 +1,6 @@
 module.exports = {
-	"plugins": ["css"],
-	"extends": [
-		"plugin:css/recommended"
+	plugins: ['css'],
+	extends: [
+		'plugin:css/recommended'
 	]
 }
