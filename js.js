@@ -11,6 +11,7 @@ module.exports = {
 	extends: ['eslint:recommended', './unicorn', './array', './promise',],
 	// "plugins": ['@stylistic/js'],
 	rules: {
+		'no-var': 'error',
 		'no-unused-vars': ['warn'],
 		'no-else-return': ['error', { allowElseIf: true }],
 		curly: ['error', 'all'],
