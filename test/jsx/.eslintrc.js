@@ -3,7 +3,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	extends: [
-		'../../react.js'
+		'../../react.js', '../../node.js'
 	],
 	rules: {
 	},

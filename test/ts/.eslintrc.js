@@ -1,6 +1,6 @@
 module.exports = {
 	extends: [
-		'../../ts.js'
+		'../../ts.js', '../../node.js'
 	],
 	parser: '@typescript-eslint/parser', // should be already existing
 	parserOptions: { // add this object
