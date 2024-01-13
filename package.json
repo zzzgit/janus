@@ -2,8 +2,9 @@
 	"name": "eslint-config-janus",
 	"version": "2.0.0",
 	"description": "an eslint configuration",
+	"type": "commonjs",
 	"scripts": {
-		"test": "eslint \"./lib/**\""
+		"test": "eslint \"./\""
 	},
 	"repository": {
 		"type": "git",
