@@ -3,7 +3,7 @@ module.exports = {
 	},
 	globals: {
 	},
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'], // extend的目的，是為了在這裡可以關閉一些js的規則
+	extends: ['./js', 'plugin:@typescript-eslint/recommended'], // 'eslint:recommended'
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint', '@stylistic/ts'],
 	rules: {
@@ -37,11 +37,9 @@ module.exports = {
 		'@typescript-eslint/no-this-alias': ['error', { allowDestructuring: true }],
 		'@typescript-eslint/no-unnecessary-qualifier': 'warn',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
-		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': ['error', {
 			vars: 'all', args: 'after-used', ignoreRestSiblings: false
 		}],
-		'no-undef': 'off',
 		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-var-requires': 'off',
