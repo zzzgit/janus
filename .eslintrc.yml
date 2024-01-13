@@ -1,1 +1,5 @@
 extends: ['./js.js', './node.js' ]
+env:
+  browser: true
+  node: true
+
