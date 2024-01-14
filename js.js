@@ -19,6 +19,9 @@ module.exports = {
 			destructuring: 'any',
 			ignoreReadBeforeAssign: false
 		}],
+		'sort-imports': ['error', {
+			ignoreCase: false, ignoreDeclarationSort: true, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'], allowSeparatedGroups: false
+		}],
 		'@stylistic/js/indent': ['error', 'tab'],
 		'@stylistic/js/semi-spacing': ['error', {
 			before: false, after: true
