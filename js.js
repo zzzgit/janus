@@ -22,7 +22,7 @@ module.exports = {
 		'sort-imports': ['error', {
 			ignoreCase: false, ignoreDeclarationSort: true, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'], allowSeparatedGroups: false
 		}],
-		'no-duplicate-imports': ["error"],
+		'no-duplicate-imports': ['error'],
 		'@stylistic/js/indent': ['error', 'tab'],
 		'@stylistic/js/semi-spacing': ['error', {
 			before: false, after: true
