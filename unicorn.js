@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['unicorn'],
+import unicorn from 'eslint-plugin-unicorn'
+
+export default [{
+	plugins: {
+		unicorn,
+	},
+
 	rules: {
 		'unicorn/catch-error-name': 'off',
 		'unicorn/custom-error-definition': 'off',
@@ -26,4 +31,4 @@ module.exports = {
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/throw-new-error': 'error',
 	},
-}
+}]

@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['promise'],
+import promise from 'eslint-plugin-promise'
+
+export default [{
+	plugins: {
+		promise,
+	},
+
 	rules: {
 		'promise/catch-or-return': 'error',
 		'promise/no-return-wrap': 'error',
@@ -16,4 +21,4 @@ module.exports = {
 		'promise/prefer-await-to-then': 'off',
 		'promise/prefer-await-to-callbacks': 'error',
 	},
-}
+}]

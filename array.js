@@ -1,5 +1,9 @@
-module.exports = {
-	plugins: ['array-func'],
+import arrayFunc from 'eslint-plugin-array-func'
+
+export default [{
+	plugins: {
+		'array-func': arrayFunc,
+	},
 	rules: {
 		'array-func/from-map': 'error',
 		'array-func/no-unnecessary-this-arg': 'error',
@@ -8,4 +12,4 @@ module.exports = {
 		'array-func/prefer-flat-map': 'error',
 		'array-func/prefer-flat': 'error',
 	},
-}
+}]

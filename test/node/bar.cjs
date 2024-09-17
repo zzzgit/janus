@@ -6,5 +6,3 @@ const abcd = 3
 
 console.log(abcd );
 debugger;
-
-export default {}

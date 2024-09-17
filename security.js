@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['security'],
+import security from 'eslint-plugin-security'
+
+export default [{
+	plugins: {
+		security,
+	},
+
 	rules: {
 		'security/detect-buffer-noassert': 'warn',
 		'security/detect-child-process': 'warn',
@@ -15,4 +20,4 @@ module.exports = {
 		'security/detect-pseudoRandomBytes': 'warn',
 		'security/detect-unsafe-regex': 'warn',
 	},
-}
+}]

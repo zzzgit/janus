@@ -1,5 +1,10 @@
-module.exports = {
-	plugins: ['eslint-plugin-lit'],
+import lit from 'eslint-plugin-lit'
+
+export default [{
+	plugins: {
+		lit,
+	},
+
 	rules: {
 		'lit/attribute-value-entities': 'error',
 		'lit/binding-positions': 'error',
@@ -15,4 +20,4 @@ module.exports = {
 		'lit/no-useless-template-literals': 'error',
 		'lit/no-value-attribute': 'error',
 	},
-}
+}]

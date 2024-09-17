@@ -1,35 +1,45 @@
-module.exports = {
-	env: {
-		node: true,
-		commonjs: true,
-		browser: false,
+import node from 'eslint-plugin-n'
+import globals from 'globals'
+
+export default [
+	node.configs['flat/recommended-script'],
+	{
+
+		languageOptions: {
+			globals: {
+				...globals.node,
+				...globals.commonjs,
+				...Object.fromEntries(Object.entries(globals.browser).map(([key])=> [key, 'off'])),
+				Atomics: false,
+				SharedArrayBuffer: false,
+			},
+			parserOptions: {
+				sourceType: 'module',
+			},
+		},
+
+		rules: {
+			'n/no-extraneous-import': 'error',
+			'n/no-extraneous-require': 'error',
+			'n/no-missing-import': 'off',
+			'n/no-missing-require': 'off',
+			'n/no-unpublished-bin': 'error',
+			'n/no-unpublished-import': 'off',
+			'n/no-unpublished-require': 'off',
+			'n/no-unsupported-features/es-builtins': 'error',
+			'n/no-unsupported-features/es-syntax': 'off',
+			'n/no-unsupported-features/node-builtins': 'error',
+			'n/process-exit-as-throw': 'error',
+			'n/shebang': 'error',
+			'n/no-deprecated-api': 'error',
+			'n/exports-style': 'error',
+			'n/prefer-global/buffer': 'error',
+			'n/prefer-global/console': 'error',
+			'n/prefer-global/process': 'error',
+			'n/prefer-global/text-decoder': 'error',
+			'n/prefer-global/text-encoder': 'error',
+			'n/prefer-global/url-search-params': 'error',
+			'n/prefer-global/url': 'error',
+		},
 	},
-	globals: {
-		Atomics: false,
-		SharedArrayBuffer: false,
-	},
-	plugins: ['eslint-plugin-node'],
-	rules: {
-		'node/no-extraneous-import': 'error',
-		'node/no-extraneous-require': 'error',
-		'node/no-missing-import': 'off',
-		'node/no-missing-require': 'off',
-		'node/no-unpublished-bin': 'error',
-		'node/no-unpublished-import': 'off',
-		'node/no-unpublished-require': 'off',
-		'node/no-unsupported-features/es-builtins': 'error',
-		'node/no-unsupported-features/es-syntax': 'off',
-		'node/no-unsupported-features/node-builtins': 'error',
-		'node/process-exit-as-throw': 'error',
-		'node/shebang': 'error',
-		'node/no-deprecated-api': 'error',
-		'node/exports-style': 'error',
-		'node/prefer-global/buffer': 'error',
-		'node/prefer-global/console': 'error',
-		'node/prefer-global/process': 'error',
-		'node/prefer-global/text-decoder': 'error',
-		'node/prefer-global/text-encoder': 'error',
-		'node/prefer-global/url-search-params': 'error',
-		'node/prefer-global/url': 'error',
-	},
-}
+]

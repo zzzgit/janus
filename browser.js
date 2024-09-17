@@ -1,11 +1,11 @@
-module.exports = {
-	env: {
-		browser: true,
-		node: false,
+import globals from 'globals'
+
+export default [
+	{
+		languageOptions: {
+			globals: {
+				...globals.browser,
+			},
+		},
 	},
-	globals: {
-		// "Atomics": false,
-		// "SharedArrayBuffer": false,
-	},
-	extends: ['./js'],
-}
+]

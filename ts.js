@@ -1,56 +1,100 @@
-module.exports = {
-	parserOptions: {
-	},
-	globals: {
-	},
-	extends: ['./js', 'plugin:@typescript-eslint/recommended'], // 'eslint:recommended'
-	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint', '@stylistic/ts'],
-	rules: {
-		'@typescript-eslint/adjacent-overload-signatures': 'error',
-		'@typescript-eslint/array-type': 'error',
-		'@typescript-eslint/await-thenable': 'error',
-		'@typescript-eslint/ban-types': 'error',
-		'@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
-		'@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
-		'@typescript-eslint/member-ordering': 'off',
-		'@typescript-eslint/no-array-constructor': 'error',
-		'@typescript-eslint/no-empty-interface': 'error',
-		'@typescript-eslint/no-explicit-any': 'off',
-		'@typescript-eslint/no-extraneous-class': ['error', {
-			allowConstructorOnly: false, allowEmpty: false, allowStaticOnly: true, allowWithDecorator: true
-		}],
-		'@typescript-eslint/no-for-in-array': 'error',
-		'@typescript-eslint/no-inferrable-types': 'off',
-		'@typescript-eslint/prefer-readonly': 'off',
-		'@typescript-eslint/no-misused-new': 'error',
-		'@typescript-eslint/ban-ts-comment': ['error', {
-			'ts-expect-error': 'allow-with-description',
-			'ts-ignore': true,
-			'ts-nocheck': true,
-			'ts-check': false,
-			minimumDescriptionLength: 3,
-		}],
-		'@typescript-eslint/no-namespace': 'error',
-		'@typescript-eslint/no-non-null-assertion': 'error',
-		'@typescript-eslint/no-require-imports': 'off',
-		'@typescript-eslint/no-this-alias': ['error', { allowDestructuring: true }],
-		'@typescript-eslint/no-unnecessary-qualifier': 'warn',
-		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
-		'@typescript-eslint/no-unused-vars': ['error', {
-			vars: 'all', args: 'after-used', ignoreRestSiblings: false
-		}],
-		'@typescript-eslint/no-use-before-define': 'off',
-		'@typescript-eslint/no-useless-constructor': 'error',
-		'@typescript-eslint/no-var-requires': 'off',
-		'@typescript-eslint/prefer-for-of': 'error',
-		'@typescript-eslint/prefer-function-type': 'error',
-		'@typescript-eslint/prefer-namespace-keyword': 'error',
-		'@typescript-eslint/promise-function-async': 'off',
-		'@typescript-eslint/restrict-plus-operands': 'off',
-		'@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
-		'@typescript-eslint/unified-signatures': 'warn',
-		'@typescript-eslint/prefer-optional-chain': 'error',
+import tseslint from 'typescript-eslint'
+import stylisticTs from '@stylistic/eslint-plugin-ts'
+import tsParser from '@typescript-eslint/parser'
+// import js from './js.js'
 
+export default [
+	// ...js,
+	...tseslint.configs.recommended,
+
+	{
+		plugins: {
+			'@ts': tseslint,
+			'@stylistic/ts': stylisticTs,
+		},
+
+		languageOptions: {
+			parser: tsParser,
+		},
+
+		rules: {
+			'@ts/adjacent-overload-signatures': 'error',
+			'@ts/array-type': 'error',
+			'@ts/await-thenable': 'error',
+
+			'@ts/explicit-function-return-type': ['error',
+				{
+					allowExpressions: true,
+				}],
+
+			'@ts/explicit-member-accessibility': ['error',
+				{
+					accessibility: 'no-public',
+				}],
+
+			'@ts/member-ordering': 'off',
+			'@ts/no-array-constructor': 'error',
+			'@ts/no-empty-interface': 'error',
+			'@ts/no-explicit-any': 'error',
+
+			'@ts/no-extraneous-class': ['error',
+				{
+					allowConstructorOnly: false,
+					allowEmpty: false,
+					allowStaticOnly: true,
+					allowWithDecorator: true,
+				}],
+
+			'@ts/no-for-in-array': 'error',
+			'@ts/no-inferrable-types': 'off',
+			'@ts/prefer-readonly': 'off',
+			'@ts/no-misused-new': 'error',
+
+			'@ts/ban-ts-comment': ['error',
+				{
+					'ts-expect-error': 'allow-with-description',
+					'ts-ignore': true,
+					'ts-nocheck': true,
+					'ts-check': false,
+					minimumDescriptionLength: 3,
+				}],
+
+			'@ts/no-namespace': 'error',
+			'@ts/no-non-null-assertion': 'error',
+			'@ts/no-require-imports': 'off',
+
+			'@ts/no-this-alias': ['error',
+				{
+					allowDestructuring: true,
+				}],
+
+			'@ts/no-unnecessary-qualifier': 'warn',
+			'@ts/no-unnecessary-type-assertion': 'error',
+
+			'@ts/no-unused-vars': ['error',
+				{
+					vars: 'all',
+					args: 'after-used',
+					ignoreRestSiblings: false,
+				}],
+
+			'@ts/no-use-before-define': 'off',
+			'@ts/no-useless-constructor': 'error',
+			'@ts/no-var-requires': 'off',
+			'@ts/prefer-for-of': 'error',
+			'@ts/prefer-function-type': 'error',
+			'@ts/prefer-namespace-keyword': 'error',
+			'@ts/promise-function-async': 'off',
+			'@ts/restrict-plus-operands': 'off',
+
+			'@ts/unbound-method': ['error',
+				{
+					ignoreStatic: true,
+				}],
+
+			'@ts/unified-signatures': 'warn',
+			'@ts/prefer-optional-chain': 'error',
+			'@stylistic/ts/no-extra-semi': 'error',
+		},
 	},
-}
+]
