@@ -44,7 +44,7 @@ export default [
 			'no-duplicate-imports': [2],
 			'no-unmodified-loop-condition': 2,
 			'no-unreachable-loop': 2,
-			'no-use-before-define': 2,
+			'no-use-before-define': 0,
 			'no-useless-assignment': 2,
 			'require-atomic-updates': 2,
 			'no-template-curly-in-string': 1,
@@ -54,7 +54,15 @@ export default [
 			'no-constructor-return': 2,
 			'no-await-in-loop': 2,
 			'array-callback-return': 2,
-
+			'no-unused-vars': [2,
+				{
+					vars: 'all',
+					args: 'after-used',
+					caughtErrors: 'all',
+					ignoreRestSiblings: false,
+					argsIgnorePattern: '^_',
+					reportUsedIgnorePattern: true,
+				}],
 		},
 
 	},

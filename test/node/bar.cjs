@@ -6,3 +6,7 @@ const abcd = 3
 
 console.log(abcd );
 debugger;
+
+module.exports = {
+abcd,
+}

@@ -13,9 +13,7 @@ export default [
 				Atomics: false,
 				SharedArrayBuffer: false,
 			},
-			parserOptions: {
-				sourceType: 'module',
-			},
+			sourceType: 'commonjs',
 		},
 
 		rules: {
