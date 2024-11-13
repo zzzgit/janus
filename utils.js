@@ -1,68 +1,72 @@
-const jsify = (configs, {ignores, files})=> {
+const jsify = (configs, info)=> {
 	return configs.map((config)=> {
-		let filesResult = config.files
-		if (filesResult == null){
-			filesResult = []
+		let files = config.files
+		if (files == null){
+			files = []
 		}
-		if (!Array.isArray(filesResult)){
-			filesResult = [filesResult]
+		if (!Array.isArray(files)){
+			files = [files]
 		}
-		filesResult.push('**/*.js')
-		if(files){
-			if(!Array.isArray(files)){
-				files = [files]
+		files.push('**/*.js')
+		if(info?.files){
+			let infoFiles = info.files
+			if(!Array.isArray(infoFiles)){
+				infoFiles = [infoFiles]
 			}
-			filesResult = filesResult.concat(files)
+			files = files.concat(infoFiles)
 		}
-		let ignoresResults = config.ignores
-		if (ignoresResults == null){
-			ignoresResults = []
+		let ignores = config.ignores
+		if (ignores == null){
+			ignores = []
 		}
-		if (!Array.isArray(ignoresResults)){
-			ignoresResults = [ignoresResults]
+		if (!Array.isArray(ignores)){
+			ignores = [ignores]
 		}
-		ignoresResults.push('**/*.ts')
-		if(ignores){
-			if(!Array.isArray(ignores)){
-				ignores = [ignores]
+		ignores.push('**/*.ts')
+		if(info?.ignores){
+			let infoIgnores = info.ignores
+			if(!Array.isArray(infoIgnores)){
+				infoIgnores = [infoIgnores]
 			}
-			ignoresResults = ignoresResults.concat(ignores)
+			ignores = ignores.concat(infoIgnores)
 		}
-		return {...config, files: filesResult, ignores: ignoresResult}
+		return {...config, files , ignores }
 	})
 }
-
-const tsify = (configs, {ignores, files})=> {
+const tsify = (configs, info)=> {
 	return configs.map((config)=> {
-		let filesResult = config.files
-		if (filesResult == null){
-			filesResult = []
+		let files = config.files
+		if (files == null){
+			files = []
 		}
-		if (!Array.isArray(filesResult)){
-			filesResult = [filesResult]
+		if (!Array.isArray(files)){
+			files = [files]
 		}
-		filesResult.push('**/*.ts')
-		if(files){
-			if(!Array.isArray(files)){
-				files = [files]
+		files.push('**/*.ts')
+		if(info?.files){
+			let infoFiles = info.files
+			if(!Array.isArray(infoFiles)){
+				infoFiles = [infoFiles]
 			}
-			filesResult = filesResult.concat(files)
+			files = files.concat(infoFiles)
 		}
-		let ignoresResults = config.ignores
-		if (ignoresResults == null){
-			ignoresResults = []
+		let ignores = config.ignores
+		if (ignores == null){
+			ignores = []
 		}
-		if (!Array.isArray(ignoresResults)){
-			ignoresResults = [ignoresResults]
+		if (!Array.isArray(ignores)){
+			ignores = [ignores]
 		}
-		ignoresResults.push('**/*.js')
-		if(ignores){
-			if(!Array.isArray(ignores)){
-				ignores = [ignores]
+		ignores.push('**/*.js')
+		if(info?.ignores){
+			let infoIgnores = info.ignores
+			if(!Array.isArray(infoIgnores)){
+				infoIgnores = [infoIgnores]
 			}
-			ignoresResults = ignoresResults.concat(ignores)
+			ignores = ignores.concat(infoIgnores)
 		}
-		return {...config, files: filesResult, ignores: ignoresResult}
+		return {...config, files , ignores }
 	})
 }
-export { jsify, tsify }
+ 
+export { jsify , tsify }
