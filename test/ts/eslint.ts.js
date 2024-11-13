@@ -1,8 +1,8 @@
 import tsParser from '@typescript-eslint/parser'
 import ts from '../../ts.js'
-// import {tsify} from '../../utils.js'
+import { tsify } from '../../utils.js'
 
-export default [
+export default tsify([
 	...ts,
 	{
 		languageOptions: {
@@ -12,5 +12,7 @@ export default [
 				tsconfigRootDir: import.meta.dirname,
 			},
 		},
+		files: ['**/*.ts'],
+		ignores: ['**/*.js'],
 	},
-]
+])
