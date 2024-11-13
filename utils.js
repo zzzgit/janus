@@ -1,46 +1,68 @@
-const jsify = (configs)=> {
+const jsify = (configs, {ignores, files})=> {
 	return configs.map((config)=> {
-		const result = { ...config }
-		let files = config.files
-		if (files == null){
-			files = []
+		let filesResult = config.files
+		if (filesResult == null){
+			filesResult = []
 		}
-		if (!Array.isArray(files)){
-			files = [files]
+		if (!Array.isArray(filesResult)){
+			filesResult = [filesResult]
 		}
-		files.push('**/*.js')
-		let ignores = config.ignores
-		if (ignores == null){
-			ignores = []
+		filesResult.push('**/*.js')
+		if(files){
+			if(!Array.isArray(files)){
+				files = [files]
+			}
+			filesResult = filesResult.concat(files)
 		}
-		if (!Array.isArray(ignores)){
-			ignores = [ignores]
+		let ignoresResults = config.ignores
+		if (ignoresResults == null){
+			ignoresResults = []
 		}
-		ignores.push('**/*.ts')
-		return result
+		if (!Array.isArray(ignoresResults)){
+			ignoresResults = [ignoresResults]
+		}
+		ignoresResults.push('**/*.ts')
+		if(ignores){
+			if(!Array.isArray(ignores)){
+				ignores = [ignores]
+			}
+			ignoresResults = ignoresResults.concat(ignores)
+		}
+		return {...config, files: filesResult, ignores: ignoresResult}
 	})
 }
 
-const tsify = (configs)=> {
+const tsify = (configs, {ignores, files})=> {
 	return configs.map((config)=> {
-		const result = { ...config }
-		let files = config.files
-		if (files == null){
-			files = []
+		let filesResult = config.files
+		if (filesResult == null){
+			filesResult = []
 		}
-		if (!Array.isArray(files)){
-			files = [files]
+		if (!Array.isArray(filesResult)){
+			filesResult = [filesResult]
 		}
-		files.push('**/*.ts')
-		let ignores = config.ignores
-		if (ignores == null){
-			ignores = []
+		filesResult.push('**/*.ts')
+		if(files){
+			if(!Array.isArray(files)){
+				files = [files]
+			}
+			filesResult = filesResult.concat(files)
 		}
-		if (!Array.isArray(ignores)){
-			ignores = [ignores]
+		let ignoresResults = config.ignores
+		if (ignoresResults == null){
+			ignoresResults = []
 		}
-		ignores.push('**/*.js')
-		return result
+		if (!Array.isArray(ignoresResults)){
+			ignoresResults = [ignoresResults]
+		}
+		ignoresResults.push('**/*.js')
+		if(ignores){
+			if(!Array.isArray(ignores)){
+				ignores = [ignores]
+			}
+			ignoresResults = ignoresResults.concat(ignores)
+		}
+		return {...config, files: filesResult, ignores: ignoresResult}
 	})
 }
 export { jsify, tsify }
