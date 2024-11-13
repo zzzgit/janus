@@ -1,20 +1,24 @@
-import ts from '../../ts.js'
 import tsParser from '@typescript-eslint/parser'
+import ts from '../../ts.js'
 
-import node from '../../node.js'
-
-export default[
+export default [
+	{
+		ignores: ['**/*.js'],
+	},
 	...ts,
-	...node,
-].map(config=> ({
-	...config,
-	languageOptions: {
-		// 这里重复了，但是只能这样写
-		parser: tsParser,
-		parserOptions: {
-			project: ['./tsconfig.json'],
-			tsconfigRootDir: import.meta.dirname,
+	{
+		files: [
+			'**/*.ts',
+		],
+		languageOptions: {
+			parser: tsParser,
+			parserOptions: {
+				project: ['./tsconfig.json'],
+				tsconfigRootDir: import.meta.dirname,
+			},
+		},
+		rules: {
+
 		},
 	},
-	files: ['test/ts/**/*.ts'],
-}))
+]

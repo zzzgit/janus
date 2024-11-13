@@ -147,7 +147,8 @@ export default [
 			'@stylistic/js/nonblock-statement-body-position': [1],
 
 			// here, need to ignore in comments
-			'@stylistic/js/no-tabs': [1, { allowIndentationTabs: true }],
+			// '@stylistic/js/no-tabs': [1, { allowIndentationTabs: true }],
+			'@stylistic/js/no-tabs': 0,
 			'@stylistic/js/no-extra-semi': [2],
 			'@stylistic/js/no-floating-decimal': [1],
 			'@stylistic/js/no-confusing-arrow': [2],

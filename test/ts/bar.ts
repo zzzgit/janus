@@ -2,7 +2,7 @@ const foo: number = 123
 foo.a = 3
 const dgd = (ddd: number): number=> {
 	const foo = {}
-	const bbb = foo?.a?.b?.c
+	const bbb = foo?.a?.b?.c     
 	if(bbb){
 		return 123
 	}
@@ -19,5 +19,7 @@ const abc = (attr: number):number=> {
 	}
 	return a
 }
-
+if(3>2    ){
+	console.log(2)
+}
 export default abc
