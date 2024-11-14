@@ -13,7 +13,7 @@ const jsify = (configs, info)=> {
 			if(!Array.isArray(infoFiles)){
 				infoFiles = [infoFiles]
 			}
-			files = files.concat(infoFiles)
+			files = [...files, ...infoFiles]
 		}
 		let ignores = config.ignores
 		if (ignores == null){
@@ -28,9 +28,11 @@ const jsify = (configs, info)=> {
 			if(!Array.isArray(infoIgnores)){
 				infoIgnores = [infoIgnores]
 			}
-			ignores = ignores.concat(infoIgnores)
+			ignores = [...ignores, ...infoIgnores]
 		}
-		return {...config, files , ignores }
+		return {
+			...config, files, ignores,
+		}
 	})
 }
 const tsify = (configs, info)=> {
@@ -48,7 +50,7 @@ const tsify = (configs, info)=> {
 			if(!Array.isArray(infoFiles)){
 				infoFiles = [infoFiles]
 			}
-			files = files.concat(infoFiles)
+			files = [...files, ...infoFiles]
 		}
 		let ignores = config.ignores
 		if (ignores == null){
@@ -63,10 +65,12 @@ const tsify = (configs, info)=> {
 			if(!Array.isArray(infoIgnores)){
 				infoIgnores = [infoIgnores]
 			}
-			ignores = ignores.concat(infoIgnores)
+			ignores = [...ignores, ...infoIgnores]
 		}
-		return {...config, files , ignores }
+		return {
+			...config, files, ignores,
+		}
 	})
 }
- 
-export { jsify , tsify }
+
+export { jsify, tsify }
