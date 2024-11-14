@@ -1,9 +1,9 @@
 import jest from 'eslint-plugin-jest'
 import globals from 'globals'
-import js from '@eslint/js'
+// import js from '@eslint/js'
 
 export default [
-	...js,
+	// ...js,
 	jest.configs['flat/recommended'],
 	{
 		plugins: {

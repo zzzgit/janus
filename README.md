@@ -14,6 +14,6 @@ The priority of inheritation:
 
 language > syntax > platform > env
 
+jest is automized and language neutual
+
 ## todo
-1. ts is not working 
-2. jest has not been tested
