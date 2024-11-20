@@ -8,6 +8,7 @@ const jsify = (configs, info)=> {
 			files = [files]
 		}
 		files.push('**/*.js')
+		files.push('**/*.mjs')
 		if(info?.files){
 			let infoFiles = info.files
 			if(!Array.isArray(infoFiles)){
