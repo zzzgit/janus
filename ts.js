@@ -16,6 +16,7 @@ export default [
 			parser: tsParser,
 		},
 		rules: {
+			'@typescript-eslint/restrict-template-expressions': 0,
 		},
 	},
 
