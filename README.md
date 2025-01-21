@@ -16,4 +16,6 @@ language > syntax > platform > env
 
 jest is automized and language neutual
 
+node is isolated
+
 ## todo
