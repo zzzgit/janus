@@ -19,6 +19,7 @@ export default [{
 		'promise/no-return-in-finally': 'error',
 		'promise/valid-params': 'error',
 		'promise/prefer-await-to-then': 'off',
-		'promise/prefer-await-to-callbacks': 'error',
+		'promise/prefer-await-to-callbacks': 'off',
+		'promise/prefer-catch': 'error',
 	},
 }]
