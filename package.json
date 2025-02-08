@@ -42,6 +42,7 @@
 		"eslint-plugin-lit": "^1.15.0",
 		"eslint-plugin-mocha": "^10.5.0",
 		"eslint-plugin-n": "^17.13.1",
+		"eslint-plugin-no-floating-promise": "^2.0.0",
 		"eslint-plugin-promise": "^7.1.0",
 		"eslint-plugin-react": "^7.37.2",
 		"eslint-plugin-security": "^3.0.1",
