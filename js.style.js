@@ -143,7 +143,7 @@ export default [
 			'@stylistic/js/multiline-comment-style': 0,
 			'@stylistic/js/max-statements-per-line': [2, { max: 3 }],
 			'@stylistic/js/line-comment-position': [2, { position: 'above' }],
-			'@stylistic/js/linebreak-style': [1, 'unix'],
+			'@stylistic/js/linebreak-style': 0,
 			'@stylistic/js/nonblock-statement-body-position': [1],
 
 			// here, need to ignore in comments
