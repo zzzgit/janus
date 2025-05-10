@@ -8,6 +8,7 @@ const jsify = (configs, info)=> {
 			files = [files]
 		}
 		files.push('**/*.js')
+		files.push('**/*.jsx')
 		files.push('**/*.mjs')
 		if(info?.files){
 			let infoFiles = info.files
@@ -24,6 +25,7 @@ const jsify = (configs, info)=> {
 			ignores = [ignores]
 		}
 		ignores.push('**/*.ts')
+		ignores.push('**/*.tsx')
 		if(info?.ignores){
 			let infoIgnores = info.ignores
 			if(!Array.isArray(infoIgnores)){
@@ -45,7 +47,7 @@ const tsify = (configs, info)=> {
 		if (!Array.isArray(files)){
 			files = [files]
 		}
-		files.push('**/*.ts')
+		files.push('**/*.ts', '**/*.tsx')
 		if(info?.files){
 			let infoFiles = info.files
 			if(!Array.isArray(infoFiles)){
@@ -60,7 +62,7 @@ const tsify = (configs, info)=> {
 		if (!Array.isArray(ignores)){
 			ignores = [ignores]
 		}
-		ignores.push('**/*.js')
+		ignores.push('**/*.js', '**/*.jsx')
 		if(info?.ignores){
 			let infoIgnores = info.ignores
 			if(!Array.isArray(infoIgnores)){
