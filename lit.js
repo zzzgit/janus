@@ -1,6 +1,7 @@
 import lit from 'eslint-plugin-lit'
 
 export default [{
+	name: 'janus/lit',
 	plugins: {
 		lit,
 	},

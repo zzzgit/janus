@@ -6,6 +6,7 @@ export default [
 	// ...js,
 	jest.configs['flat/recommended'],
 	{
+		name: 'janus/jest',
 		plugins: {
 			jest,
 		},

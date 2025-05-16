@@ -2,6 +2,7 @@ import stylisticJs from '@stylistic/eslint-plugin-js'
 
 export default [
 	{
+		name: 'janus/stylistic/js',
 		plugins: {
 			'@stylistic/js': stylisticJs,
 		},

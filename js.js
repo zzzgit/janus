@@ -20,6 +20,7 @@ export default [
 	...array,
 	...promise,
 	{
+		name: 'janus/js',
 		rules: {
 			'no-var': 2,
 

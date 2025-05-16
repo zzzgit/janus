@@ -1,6 +1,7 @@
 import arrayFunc from 'eslint-plugin-array-func'
 
 export default [{
+	name: 'janus/array',
 	plugins: {
 		'array-func': arrayFunc,
 	},

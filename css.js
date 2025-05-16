@@ -3,7 +3,7 @@ import css from 'eslint-plugin-css'
 export default [
 	css.configs['flat/recommended'],
 	{
-		name: 'css.js/rules',
+		name: 'janus/css',
 		plugins: {
 			css,
 		},

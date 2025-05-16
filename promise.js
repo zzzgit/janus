@@ -1,6 +1,7 @@
 import promise from 'eslint-plugin-promise'
 
 export default [{
+	name: 'janus/promise',
 	plugins: {
 		promise,
 	},

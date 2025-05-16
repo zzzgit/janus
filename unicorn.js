@@ -1,6 +1,7 @@
 import unicorn from 'eslint-plugin-unicorn'
 
 export default [{
+	name: 'janus/unicorn',
 	plugins: {
 		unicorn,
 	},

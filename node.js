@@ -4,7 +4,7 @@ import globals from 'globals'
 export default [
 	node.configs['flat/recommended-script'],
 	{
-
+		name: "janus/node",
 		languageOptions: {
 			globals: {
 				...globals.node,
