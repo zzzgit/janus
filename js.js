@@ -3,7 +3,7 @@ import jsStyle from './js.style.js'
 import unicorn from './unicorn.js'
 import array from './array.js'
 import promise from './promise.js'
-import floatingPomise from "eslint-plugin-no-floating-promise"
+import floatingPomise from 'eslint-plugin-no-floating-promise'
 
 export default [
 	{
@@ -11,7 +11,7 @@ export default [
 			ecmaVersion: 'latest',
 		},
 		plugins: {
-			"no-floating-promise": floatingPomise,
+			'no-floating-promise': floatingPomise,
 		},
 	},
 	js.configs.recommended,
@@ -51,7 +51,6 @@ export default [
 			'no-unreachable-loop': 2,
 			'no-use-before-define': 0,
 			'no-useless-assignment': 2,
-			'require-atomic-updates': 2,
 			'no-template-curly-in-string': 1,
 			'no-self-compare': 2,
 			'no-promise-executor-return': 2,
@@ -68,7 +67,7 @@ export default [
 					argsIgnorePattern: '^_',
 					reportUsedIgnorePattern: true,
 				}],
-			"no-floating-promise/no-floating-promise": 2,
+			'no-floating-promise/no-floating-promise': 2,
 			'require-await': 2,
 			'require-atomic-updates': [2, { allowProperties: true }],
 		},

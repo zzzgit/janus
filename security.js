@@ -1,8 +1,7 @@
-import { name } from 'eslint-plugin-css/dist/meta'
 import security from 'eslint-plugin-security'
 
 export default [{
-	name : 'janus/security',
+	name: 'janus/security',
 	plugins: {
 		security,
 	},
