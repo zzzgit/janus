@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es2015",
+		"target": "es2020",
 		"lib": [
 			"dom",
 			"dom.iterable",
@@ -24,8 +24,7 @@
 		"node_modules"
 	],
 	"include": [
-		"next-env.d.ts",
 		"**/*.ts",
-		"**/*.tsx",
+		"**/*.tsx"
 	]
 }

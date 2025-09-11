@@ -12,7 +12,5 @@ export default tsify([
 				tsconfigRootDir: import.meta.dirname,
 			},
 		},
-		files: ['**/*.ts'],
-		ignores: ['**/*.js'],
 	},
 ])

@@ -1,20 +1,9 @@
-import tsParser from '@typescript-eslint/parser'
-import js from './js.js'
+import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
+import js from './js.js'
 
-export default [
-	...js,
-	...tseslint.configs.recommendedTypeChecked,
-	{
-		plugins: {
-			'@typescript-eslint': tseslint.plugin,
-		},
-		languageOptions: {
-			parser: tsParser,
-		},
-		rules: {
-			'@typescript-eslint/restrict-template-expressions': 0,
-		},
+export default defineConfig(...js, tseslint.configs.recommendedTypeChecked, {
+	rules: {
+		'@typescript-eslint/restrict-template-expressions': 0,
 	},
-
-]
+})
