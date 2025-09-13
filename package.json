@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-janus",
-	"version": "9.0.19",
+	"version": "9.0.20",
 	"description": "an eslint configuration",
 	"type": "module",
 	"scripts": {
